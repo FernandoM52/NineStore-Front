@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import SignInPage from "./pages/SignInPage";
+import SignUpPage from "./pages/SignUpPage";
+import HomePage from "./pages/HomePage";
+import CartShopPage from "./pages/CartShopPage";
+import ProductsPage from "./pages/ProductsPage";
+import PurchasePage from "./pages/PurchasePage";
+import UserProvider from "./context/userContext";
 
-function App() {
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <UserProvider>
+        <Routes>
+          <Route path="/" element={<SignInPage />} />
+          <Route path="/cadastro" element={<SignUpPage />} />
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/produto/:tipo" element={<ProductsPage />} />
+          <Route path="/carrinho" element={<CartShopPage />} />
+          <Route path="/pedido-finalizado" element={<PurchasePage />} />
+        </Routes>
+      </UserProvider>
+    </BrowserRouter>
   );
-}
-
-export default App;
+};
