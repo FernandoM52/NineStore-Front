@@ -7,7 +7,6 @@ import ProductsPage from "./pages/ProductsPage";
 import PurchasePage from "./pages/PurchasePage";
 import UserProvider from "./context/userContext";
 
-
 export default function App() {
   return (
     <BrowserRouter>
