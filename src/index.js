@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import "./style/tailwind.css";
+import "./style/index.css";
 //import ResetStyle from './style/ResetStyle';
 import App from './App';
 
