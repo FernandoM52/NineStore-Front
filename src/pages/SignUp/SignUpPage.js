@@ -1,5 +1,3 @@
-import styled from "styled-components"
-import tw from "twin.macro"
 import logo from "../../assets/imagens/logo.png"
 import { SignUpStyle } from "./SignUpStyle"
 import { Link } from "react-router-dom"
