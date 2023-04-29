@@ -3,32 +3,32 @@ import styled from "styled-components";
 import tw from "twin.macro";
 
 export default function ScreenWithHeader({ children }) {
-    return (
-        <Container>
-            <Header >
-                <Link to={"/home"}>
-                    <div>NINE STORE</div>
-                </Link>
+  return (
+    <Container>
+      <Header >
+        <Link to={"/home"}>
+          <div>NINE STORE</div>
+        </Link>
 
-                <h1>Bem vindo à nossa loja online!</h1>
+        <h1>Bem vindo à nossa loja online!</h1>
 
-                <NavUser>
-                    <Link to={"/login"}>
-                        <p>Entrar</p>
-                    </Link>
-                    <div></div>
-                    <Link to={"/cadastro"}>
-                        <p>Criar uma conta</p>
-                    </Link>
-                    <div></div>
-                    <Link to={"/cadastro"}>
-                        <p>Sobre</p>
-                    </Link>
-                </NavUser>
-            </Header>
-            {children}
-        </Container>
-    )
+        <NavUser>
+          <Link to={"/login"}>
+            <p>Entrar</p>
+          </Link>
+          <div></div>
+          <Link to={"/cadastro"}>
+            <p>Criar uma conta</p>
+          </Link>
+          <div></div>
+          <Link to={"/cadastro"}>
+            <p>Sobre</p>
+          </Link>
+        </NavUser>
+      </Header>
+      {children}
+    </Container>
+  )
 };
 
 const Container = styled.div`

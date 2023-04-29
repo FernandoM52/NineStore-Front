@@ -1,37 +1,43 @@
-import { feminineClothes, masculineClothes } from "../mock/TypeOfClothes";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import tw from "twin.macro";
+import { feminineClothes, masculineClothes } from "../mock/TypeOfClothes";
 import ScreenWithHeader from "../components/ScreenWithHeader";
-import bgFeminine from "../assets/bg-feminine-section.png";
-import bgMasculine from "../assets/bg-masculine-section.png";
+import bgFeminine from "../assets/imagens/bg-feminine-section.png";
+import bgMasculine from "../assets/imagens/bg-masculine-section.png";
 
 export default function HomePage() {
-    return (
-        <ScreenWithHeader>
-            <StyledWraper>Encontre os melhores preços aqui!</StyledWraper>
-            <ContainerHome>
-                <FeminineSection>
-                    <TitleSection>Feminino</TitleSection>
-                    {feminineClothes.map((f, i) => (
-                        <Link to={`/produto/${f}`} key={i}>
-                            {f}
-                        </Link>
-                    ))}
-                </FeminineSection>
+  return (
+    <ScreenWithHeader>
+      <StyledWraper>Encontre os melhores preços aqui!</StyledWraper>
+      <ContainerHome>
+        <FeminineSection>
+          <TitleSection>Feminino</TitleSection>
+          {feminineClothes.map((f, i) => (
+            <Link
+              to={`/produto/${f}`}
+              key={i}
+            >
+              {f}
+            </Link>
+          ))}
+        </FeminineSection>
 
-                <MasculineSection>
-                    <TitleSection>Masculino</TitleSection>
-                    {masculineClothes.map((m, i) => (
-                        <Link to={`/produto/${m}`} key={i}
-                        >{m}
-                        </Link>
-                    ))}
-                </MasculineSection>
-            </ContainerHome>
-        </ScreenWithHeader>
-    )
-};
+        <MasculineSection>
+          <TitleSection>Masculino</TitleSection>
+          {masculineClothes.map((m, i) => (
+            <Link
+              to={`/produto/${m}`}
+              key={i}
+            >
+              {m}
+            </Link>
+          ))}
+        </MasculineSection>
+      </ContainerHome>
+    </ScreenWithHeader>
+  );
+}
 
 const StyledWraper = styled.div`
 ${tw`pt-28 text-3xl`}
@@ -69,4 +75,3 @@ background-image: url(${bgMasculine});
 background-size: cover;
 height: 95%;
 `;
-
