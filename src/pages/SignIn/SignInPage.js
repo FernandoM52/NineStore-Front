@@ -4,6 +4,7 @@ import { UserContext } from "../../context/userContext";
 import { Link } from "react-router-dom";
 import apiAuth from "../../services/apiAuth";
 import logo from "../../assets/imagens/logo.png"
+import Logo from "../../assets/Logo.js"
 
 export default function SignInPage() {
     const { user, setUser } = useContext(UserContext);
@@ -22,7 +23,7 @@ export default function SignInPage() {
     
     return (
         <LogContainer>
-            <img alt="logo" src={logo}></img>
+            <Logo svgHeight={210} svgWidth={210}/>
             <form onSubmit={submitForm}>
                 <input id="email"
                     name="email"

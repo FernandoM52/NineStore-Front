@@ -3,6 +3,7 @@ import { SignUpStyle } from "./SignUpStyle"
 import { Link } from "react-router-dom"
 import { useState } from "react"
 import apiAuth from "../../services/apiAuth"
+import Logo from "../../assets/Logo.js"
 
 
 export default function SignUpPage() {
@@ -22,7 +23,7 @@ export default function SignUpPage() {
 
     return (
         <SignUpStyle>
-            <img alt="logo" src={logo}></img>
+            <Logo svgHeight={210} svgWidth={210}/>
         <form onSubmit={submitForm}>
             <input
                 id="name"
