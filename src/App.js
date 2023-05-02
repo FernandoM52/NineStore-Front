@@ -6,13 +6,15 @@ import CartShopPage from "./pages/CartShopPage";
 import ProductsPage from "./pages/ProductsPage";
 import PurchasePage from "./pages/PurchasePage";
 import UserProvider from "./context/userContext";
+import Home from "./pages/Home/HomePage.js"
 
 export default function App() {
   return (
     <BrowserRouter>
       <UserProvider>
         <Routes>
-          <Route path="/" element={<SignInPage />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<SignInPage />} />
           <Route path="/cadastro" element={<SignUpPage />} />
           <Route path="/home" element={<HomePage />} />
           <Route path="/produto/:tipo" element={<ProductsPage />} />
