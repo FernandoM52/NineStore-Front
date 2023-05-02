@@ -1,11 +1,11 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ChartContainer = styled.div`
 
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-`
+`;
 
 export const ImgContainer2 = styled.div`
 
@@ -76,7 +76,7 @@ export const ImgContainer2 = styled.div`
         background-color: rgba(0,0,0,0.6);
         }
     }
-    
+
     & a {
         text-decoration: none;
         color: white;
@@ -95,7 +95,7 @@ export const ImgContainer2 = styled.div`
     & a:hover {
         text-decoration: underline;
     }
-`
+`;
 
 export const ImgContainer = styled.div`
 
@@ -131,7 +131,7 @@ export const ImgContainer = styled.div`
         text-align: left;
         }
     }
-    
+
     & a {
         text-decoration: none;
         color: white;
@@ -150,4 +150,4 @@ export const ImgContainer = styled.div`
     & a:hover {
         text-decoration: underline;
     }
-`
+`;

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
     background-color: #FFFFFF;
@@ -11,7 +11,7 @@ export const Container = styled.div`
     width: 100%;
 
     border-bottom: 1px solid gray;
-` 
+`;
 
 export const IconContainer = styled.div`
 
@@ -23,10 +23,10 @@ export const IconContainer = styled.div`
     align-items: center;
     position: absolute;
     right: 15px;
-`
+`;
 
 export const LogoContainer = styled.div`
 
     position: absolute;
     left: 15px;
-`
+`;

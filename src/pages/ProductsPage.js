@@ -1,7 +1,7 @@
 export default function ProductsPage() {
-    return (
-        <div>
-            PRODUTOS FILTRADOS POR TIPO
-        </div>
-    )
-};
+  return (
+    <div>
+      PRODUTOS FILTRADOS POR TIPO
+    </div>
+  );
+}

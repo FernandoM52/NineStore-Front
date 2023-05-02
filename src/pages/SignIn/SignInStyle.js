@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const LogContainer = styled.div`
     width: 100%;
@@ -43,8 +43,5 @@ export const LogContainer = styled.div`
             font-weight: bold;
             margin-top: 8px;
         }
-
     }
-    
-
-`
+`;
