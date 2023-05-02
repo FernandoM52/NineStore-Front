@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SignInPage from "./pages/SignIn/SignInPage";
 import SignUpPage from "./pages/SignUp/SignUpPage";
 import HomePage from "./pages/HomePage";
-import Listagem from "./pages/Listagem/Listagem.js";
+import Listagem from "./pages/Listagem/Listagem";
 import CartShopPage from "./pages/CartShopPage";
 import ProductsPage from "./pages/ProductsPage";
 import PurchasePage from "./pages/PurchasePage";
