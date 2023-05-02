@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const SignUpStyle = styled.div`
     width: 100%;
     display: flex;
@@ -26,8 +25,8 @@ export const SignUpStyle = styled.div`
                 color: #DBDBDB;
                 font-size: 20px;
             }
-        }    
-       
+        }
+
         button{
             font-size: 20px;
             margin-top: 10px;
@@ -46,8 +45,5 @@ export const SignUpStyle = styled.div`
             font-weight: bold;
             margin-top: 8px;
         }
-            
     }
-          
-
-`
+`;

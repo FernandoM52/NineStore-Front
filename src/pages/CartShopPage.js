@@ -1,7 +1,7 @@
 export default function CartShopPage() {
-    return (
-        <div>
-            CARRINHO
-        </div>
-    )
-};
+  return (
+    <div>
+      CARRINHO
+    </div>
+  );
+}

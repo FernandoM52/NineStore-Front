@@ -6,7 +6,7 @@ import CartShopPage from "./pages/CartShopPage";
 import ProductsPage from "./pages/ProductsPage";
 import PurchasePage from "./pages/PurchasePage";
 import UserProvider from "./context/userContext";
-import Home from "./pages/Home/HomePage.js"
+import Home from "./pages/Home/HomePage";
 
 export default function App() {
   return (
@@ -24,4 +24,4 @@ export default function App() {
       </UserProvider>
     </BrowserRouter>
   );
-};
+}

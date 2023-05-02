@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
 
@@ -11,9 +11,9 @@ export const Container = styled.div`
     position: fixed;
     top: 50px;
     width: 100%;
-    
+
     & a {
-        color: #000;    
+        color: #000;
         font-size: 16px;
         font-family: 'Arial', 'sans-serif';
         font-weight: 500;
@@ -29,5 +29,5 @@ export const Container = styled.div`
     & a:hover {
         color: #000;
         text-decoration: underline;
-    } 
-`
+    }
+`;
