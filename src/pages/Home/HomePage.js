@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Header from "../../component/Header/Header";
-import SubHeader from "../../component/SubHeader/SubHeader";
+import Header from "../../components/Header/Header";
+import SubHeader from "../../components/SubHeader/SubHeader";
 import { ImgContainer, ImgContainer2, ChartContainer } from "./styled";
 //  import Logo from "../../assets/Logo";
 //  import LogoName from "../../assets/LogoName";
