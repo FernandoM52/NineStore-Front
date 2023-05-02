@@ -1,12 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-//  import ResetStyle from "./style/ResetStyle";
+import ResetStyle from "./style/ResetStyle";
 import "./style/index.css";
 import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    <ResetStyle />
     <App />
   </React.StrictMode>,
 );
